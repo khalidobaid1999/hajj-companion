@@ -1,0 +1,18 @@
+.ws-header{
+	width: 100%;
+	border-bottom: 1px solid lightgrey;
+	background-color: #f2f2f2;
+}
+.ws-logo{
+	display: inline;
+}
+.ws-logo img{
+	width: 200px;
+	height: auto;
+}
+.nav-btn{
+	font-size: 20pt;
+	margin-left: 20px;
+	float: left;
+	margin-top: 10px;
+}

@@ -1,0 +1,42 @@
+/* 
+site color palette:
+
+green - #0a6700
+gold -  #d58f00
+black - #00000
+white - #fffff
+
+*/
+
+/* fonts */
+
+@font-face{
+	font-family: kufi;
+	src: url('../fonts/DroidArabicKufiRegular.ttf');
+}
+
+/* main css */
+
+body{
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+}
+*:not(i){
+	font-family: kufi !important;
+}
+
+/* buttons classes */
+
+.green_btn, .blue_btn, .gold_btn{
+	padding: 10px;
+	padding-right: 20px !important;
+	padding-left: 20px !important;
+	border-radius: 2px 2px 2px;
+	color: white;
+	font-size: 15pt;
+	text-decoration: none;
+}
+.green_btn{
+	background-color: #0a6700;
+}
