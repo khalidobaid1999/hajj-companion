@@ -1,15 +1,17 @@
-<?php if(isset($_SESSION['err'])){ ?>
+<?php 
+	if(isset($_SESSION['err'])){
+?>
 <ul class="error_messages">
 <a href="javascript:void(0)" class="message_close"><i class="fa fa-times"></i></a>
-<?php echo $_SESSION['err'] ?>
+<?php echo $_SESSION['err']; $message_disp = true; ?>
 </ul>
-<?php } unset($_SESSION['err']); ?>
+<?php }  ?>
 <?php if(isset($_SESSION['success'])){ ?>
 <ul class="success_messages">
-<a href="javascript:void(0)" class="message_close"><i class="fa fa-times"></i><br/>
-<?php echo $_SESSION['success'] ?>
+<a href="javascript:void(0)" class="message_close"><i class="fa fa-times"></i></a><br/>
+<?php echo $_SESSION['success']; $message_disp = true; ?>
 </ul>
-<?php } unset($_SESSION['success']); ?>
+<?php } ?>
 <header class="ws-header">
 	<center>
 	<a href="javascript:void(0)" class="nav-btn"><i class="fas fa-bars"></i></a>

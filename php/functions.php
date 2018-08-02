@@ -91,6 +91,7 @@
 			$encrypted_pass = md5($password);
 			mysqli_query($conn, "INSERT INTO user_tbl VALUES('$username', '$email', '$encrypted_pass')");
 			header('Location: timeline');
+			$_SESSION['success'] = '<li>'.$register_success.'</li>';
 			$_SESSION['username'] = $username;
 		}
 
@@ -130,7 +131,7 @@
 	//logout function
 	if(isset($_POST['logout'])){
 		unset($_SESSION['username']);
-		$_SESSION['success'] = $logout_success;
+		$_SESSION['success'] = '<li>'.$logout_success.'</li>';
 		header('Location: home');
 	}
 
@@ -166,6 +167,20 @@
 
 			mysqli_query($conn, "INSERT INTO review_tbl VALUES('', '$comment', '$pilgrim_id', '$rating', '$amenity_reason', '$user')");
 			header('Location: timeline');
+		}
+		//forgot submit
+		if(isset($_POST['forgot_submit'])){
+			$email = mysqli_escape_string($conn, htmlspecialchars($_POST['email']));
+			$checkEmail = mysqli_query($conn, "SELECT email FROM user_tbl WHERE email = '$email'");
+			$countEmail = mysqli_num_rows($checkEmail);
+			if($countEmail < 0){
+				$_SESSION['err'] = '<li>'.$email_404.'</li>';
+			}
+			else{
+			mail($email,"Your password", $msg);
+			$_SESSION['success'] = '<li>'.$email_success.'</li>';
+			}
+			header('Location: forgot');
 		}
 
 

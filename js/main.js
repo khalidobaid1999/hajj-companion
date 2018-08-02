@@ -43,7 +43,7 @@ $(document).ready(function(){
     });
 
     //fade-out messages on-load
-    //$('.success_messages').fadeOut(5000);
-    //$('.error_messages').fadeOut(5000);
+    $('.success_messages').fadeOut(4000);
+    $('.error_messages').fadeOut(4000);
 
 });

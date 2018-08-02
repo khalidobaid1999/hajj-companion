@@ -1,0 +1,27 @@
+.ws-footer{
+	position: absolute;
+	bottom: 0px;
+}
+.forgot_div{
+	width: 100%;
+	text-align: center;
+}
+.forgot_form{
+	margin-top: 20px;
+	width: 90%;
+	max-width: 500px;
+	background-color: #efefef;
+	border: 1px solid lightgrey;
+}
+.forgot_form h3{
+	color: #d58f00;
+	font-weight: bold;
+	text-align: center;
+}
+.forgot_form input[type="text"], .forgot_form input[type="email"], .forgot_form input[type="password"]{
+	width: 70%;
+	margin-bottom: 10px;
+}
+.forgot_form input[type="submit"]{
+	margin-bottom: 10px;
+}

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 02, 2018 at 04:42 PM
+-- Generation Time: Aug 03, 2018 at 12:59 AM
 -- Server version: 10.1.13-MariaDB
 -- PHP Version: 5.6.21
 
@@ -41,7 +41,8 @@ INSERT INTO `amenity_tbl` (`amenity_id`, `amenity_name_ar`, `amenity_name_en`, `
 (1, 'صعوبة في الحجز', 'Hardship in booking', 1),
 (2, 'التأخير في الرد', 'Delay in response', 1),
 (3, 'التأخير في رحلة الطيران', 'Flight delayed', 2),
-(4, 'سوء التنظيم على الطائرة', 'Badly managed flight', 2);
+(4, 'سوء التنظيم على الطائرة', 'Badly managed flight', 2),
+(5, 'الرحلة مريحة ونظيفة ومكيفة', 'Clean air conditioned trip', 3);
 
 -- --------------------------------------------------------
 
@@ -151,7 +152,7 @@ ALTER TABLE `user_tbl`
 -- AUTO_INCREMENT for table `amenity_tbl`
 --
 ALTER TABLE `amenity_tbl`
-  MODIFY `amenity_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `amenity_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `contact_tbl`
 --
@@ -166,7 +167,7 @@ ALTER TABLE `pilgrims_tbl`
 -- AUTO_INCREMENT for table `review_tbl`
 --
 ALTER TABLE `review_tbl`
-  MODIFY `review_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `review_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
 -- Constraints for dumped tables
 --

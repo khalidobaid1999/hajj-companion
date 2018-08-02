@@ -61,6 +61,11 @@
 رفيق الحجاج سيوفر خدماته بجميع اللغات لكي تناسب المستخدم بأي لغة. كما سيتم تطوير الخدمة لتصبح معتمدة على موقع الحاج لكي تساعده للوصول للنسك القادم وتقييمه.
 كما سيتم تطويرها لتصبح متوفرة على جميع المنصات لكي يصبح أسهل للوصول له من أي مكان.";
 			$average_rating = "متوسط تقييم الرحلة";
+			$register_success = "تم تسجيل حسابك بنجاح";
+			$forgot_heading = "نسيت كلمة السر";
+			$forgot_submit = "إرسال";
+			$email_success = "تم إرسال البريد الإلكتروني بنجاح";
+			$email_404 = "البريد الإلكتروني غير موجود";
 		break;
 		case 'en' :
 			$lang = "en";               
@@ -120,6 +125,11 @@ be upgraded to become 'location based' and rate each pilgrim at its appropiate t
 The service will also be developed on all platforms so that is even more easier to access from literally
 anywhere.";
 			$average_rating = "Trip average rating";
+			$register_success = "You have been registered successfully";
+			$forgot_heading = "Forgot your password";
+			$forgot_submit = "Send e-mail";
+			$email_success = "e-mail sent";
+			$email_404 = "e-mail does not exist";
 		break;
 
 	}
