@@ -1,0 +1,24 @@
+.time_heading_section{
+	text-align: center;
+}
+.time_heading{
+}
+.time_subheading{
+	color: #0a6700;
+}
+.timeline_table{
+	width: 90%;
+	text-align: center;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+.timeline_table th{
+	background-color: #efefef;
+	color: #d58f00;
+	font-size: 14pt;
+}
+.timeline_table th, .timeline_table td{
+	border: 1px solid black;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}

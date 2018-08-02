@@ -1,6 +1,8 @@
+RewriteEngine On
+
 # code snipett: https://www.inmotionhosting.com/support/website/htaccess/disable-caching-htaccess to prevent caching for debugging
 
-<FilesMatch "\.(css|flv|gif|htm|html|ico|jpe|jpeg|jpg|js|mp3|mp4|png|pdf|swf|txt)$">
+<FilesMatch "\.(css|js)$">
 	<IfModule mod_expires.c>
 		ExpiresActive Off
 	</IfModule>
@@ -15,3 +17,11 @@
 		Header set Expires "Thu, 1 Jan 1970 00:00:00 GMT"
 	</IfModule>
 </FilesMatch>
+
+RewriteRule ^home$ index.php [NC,L]
+RewriteRule ^register$ register.php [NC,L]
+RewriteRule ^login$ login.php [NC,L]
+RewriteRule ^about$ about.php [NC,L]
+RewriteRule ^contact$ contact.php [NC,L]
+RewriteRule ^timeline$ timeline.php [NC,L]
+RewriteRule ^forgot$ forgot.php [NC,L]

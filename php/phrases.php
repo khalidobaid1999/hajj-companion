@@ -6,11 +6,91 @@
 
 	switch($_COOKIE['lang']){
 		case 'ar' :
-		$lp_heading = "تسهيل عملية الحج مهمتنا";
-		$lp_subheading = "سجل حساب مجاني وساعدنا في تطوير الحج";
-		$register_btn = "سجل الآن";
-		$hc_heading = "ما هو رفيق الحجاج؟";
+			$lang = "ar";
+			$nav_home = "الرئيسية";
+			$nav_register =  "فتح حساب جديد";
+			$nav_login = "تسجيل الدخول";
+			$nav_timeline = "الجدول الزمني";
+			$nav_contact = "تواصل معنا";
+			$nav_about = "من نحن";
+			$select_lang = "اختر اللغة";
+			$lp_heading = "تسهيل عملية الحج مهمتنا";
+			$lp_subheading = "سجل حساب مجاني ودعنا نساعدك في الحج وساعدنا في تطويره";
+			$lp_subheading_logged = "Explore the Hajj timeline and rate your experience";
+			$lp_subheading_logged = "تصفح جدول الحج وقيم تجربتك";
+			$register_btn = "سجل الآن";
+			$timeline_btn =  "جدول الحج";
+			$logout_btn = 'تسجيل الخروج';
+			$hc_heading = "ما هو رفيق الحجاج؟";
+			$hc_text = "
+			رفيق الحجاج يساعد الحجاج على معرفة طريقهم خلال الرحلة ومن ثم تقييم كل نسك من مناسك الحج على حسب المعايير المناسبة.
+	كما ستساعد هذه الخدمة الحكومة، بحيث يمكن الجهات المختصة من إجراء البحوث على التقييم والبيانات لعمل بحوث وتطوير قطاعات الحج.
+			";
+			$form_username = "اسم المستخدم";
+			$form_password = "كلمة السر";
+			$form_confpass = "تأكيد كلمة السر";
+			$form_email = "البريد الإلكتروني";
+			$reg_submit = "فتح الحساب";
+			$reg_already = "يوجد لديك حساب؟";
+			$login_submit = "تسجيل الدخول";
+			$forgot_login = "نسيت كلمة السر؟";
+			$error_prefix = "لم تملأ";
+			$err_username = "اسم المستخدم";
+			$err_password = "كلمة السر";
+			$err_conf_password = "تأكيد كلمة السر";
+			$err_email = "البريد الإلكتروني";
+			$err_not_matching = 'كلمات السر غير متطابقة';
+			$err_wrong_email = 'البريد الإلكتروني غير صحيح';
+			$time_heading = "مرحباً بك يا أيها الحاج";
+			$tl_name = "الحدث/النسك";
+			$tl_rating = "التقييم";
+			$tl_date = "التاريخ";
+			$tl_review = "تقييم الحدث/النسك";			
 		break;
+		case 'en' :
+			$lang = "en";               
+			$nav_home = "Home";
+			$nav_register =  "Register";
+			$nav_login = "Login";
+			$nav_timeline = "Hajj timeline";
+			$nav_contact = "Contact us";
+			$nav_about = "About us";
+			$select_lang = "Choose a language";
+			$lp_heading = "Making the Hajj experience easier is our job";
+			$lp_subheading = "Register a FREE account and let us help you so that you can help us improve the Hajj experience";
+			$register_btn = "Register now";
+			$timeline_btn = "Hajj timeline";
+			$logout_btn = 'Sign out';
+			$hc_heading = "What is Hajj companion?";
+			$hc_text = "
+			Hajj companion helps the Hujaj discover their way throughout the journey and submit a review
+for each part of the journey using the appropiate measurements. This would also help the government,
+as each departments could develop and research based on Hujaj reviews.
+			";
+			$form_username = "username";
+			$form_password = "password";
+			$form_confpass = "confirm password";
+			$form_email = "e-mail";
+			$reg_submit = "Register";
+			$reg_already = "Already have an account?";
+			$login_submit = "Login";
+			$error_prefix = "You have not filled";
+			$err_username = "username";
+			$err_password = "password";
+			$err_conf_password = "password confirmation";
+			$err_email = "e-mail";
+			$forgot_login = "Forgot your account?";
+			$err_not_matching = "Passwords don't match";
+			$err_wrong_email = 'Wrong e-mail';
+			$time_heading = 'Welcome to Hajj';
+			$tl_name = "Event/Pilgrim";
+			$tl_rating = "Rating";
+			$tl_date = "Date";
+			$tl_review = "Review";
+		break;
+
 	}
+
+	
 
 ?>

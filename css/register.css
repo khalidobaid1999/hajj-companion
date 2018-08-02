@@ -1,0 +1,30 @@
+.register_div{
+	width: 100%;
+	text-align: center;
+}
+.register_form{
+	margin-top: 20px;
+	width: 90%;
+	max-width: 500px;
+	background-color: #efefef;
+	border: 1px solid lightgrey;
+}
+.error_messages{
+	background-color: red;
+	padding: 0;
+	width: 90%;
+	color: white;
+	list-style-type: none;
+}
+.register_form h3{
+	color: #d58f00;
+	font-weight: bold;
+	text-align: center;
+}
+.register_form input[type="text"], .register_form input[type="email"], .register_form input[type="password"]{
+	width: 70%;
+	margin-bottom: 10px;
+}
+.register_form input[type="submit"]{
+	margin-bottom: 10px;
+}
