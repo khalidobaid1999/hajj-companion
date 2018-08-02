@@ -31,8 +31,6 @@
 			<li><a href="register"><?php echo $nav_register ?></a></li>
 			<li><a href="login"><?php echo $nav_login ?></a></li>
 			<?php } ?>
-			<li><a href="contact"><?php echo $nav_contact ?></a></li>
-			<li><a href="about"><?php echo $nav_about ?></a></li>
 			<li>
 			<form method="post">
 			<select name="language_select" class="language_select">
