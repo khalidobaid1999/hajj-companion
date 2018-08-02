@@ -1,0 +1,23 @@
+Business name: Hajj Companion – رفيق الحجاج
+
+Business Slogan: “Making Hajj easier with your help” – "تسهيل عملية الحج بمساعدتكم"
+
+What does it do?
+Hajj companion helps track what you should be doing as a Hajaj and will guide and ask for your review after every 
+part being done to help the responsible sectors to improve their departments.
+After obtaining efficient funding, it will be used to translate the site into all languages possible to give a 
+great feedback. It can be summarized as a guiding and reviewing site that would help make the Hajaj life easier,
+from the moment they get off the plane till they leave Mecca.
+It will currently be presented as a website, and in the future the funding would be used to create iOS & Android apps.
+
+
+In the images folder of the website: Website logo, favicon and  other background images used in the site.
+In the main.css file I have included the color palette used in the site.
+
+**WARNING: SOME URLs MAY NEED TO BE CHANGED FOR IT TO WORK ON A DIFFERENT ENVIRONMENT**
+    -> CURRENT URL FORMAT
+       <a href="page_name">...</a>
+**DATABASE AUTHORIZATION MAY ALSO VARY AS SOME DATABASES USE DIFFERENT USERNAME/PASSWORD**
+    -> CURRENTY SET TO>
+        username: 'root'
+        password: ''
