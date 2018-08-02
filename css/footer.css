@@ -1,0 +1,39 @@
+.ws-footer{
+	background-color: lightgrey;
+	margin-top: 60px;
+	width: 100%;
+}
+.back-to-top{
+	text-align: center;
+	color: black;
+	font-size: 18pt;
+	background-color: lightgrey;
+	padding: 15px;
+	padding-right: 18px;
+	padding-left: 18px;
+	border-radius: 50px 50px 50px;
+	position: relative;
+	top: -10px;
+	border: 2px solid white;
+}
+body[lang="ar"] .back-to-top{
+	padding: 6px !important;
+	padding-right: 18px !important;
+	padding-left: 18px !important;
+}
+.copyright{
+	text-align: center;
+	color: black;
+	font-size: 15pt;
+	font-family: arial !important;
+	margin-top: 10px;
+}
+.social-media a{
+	font-size: 20pt;
+	position: relative;
+	margin-right: 10px;
+	color: grey;
+}
+.social-media a:hover{
+	color: black;
+}

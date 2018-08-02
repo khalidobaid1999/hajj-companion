@@ -96,29 +96,42 @@
 
 		if($error_message != ''){
 			$_SESSION['err'] = $error_message;
-			$_SESSION['err_shown'] = true;
 		}
 
 
 
 		header('Location: register');
-		exit();
 
 	}
 
-	if(isset($_SESSION['err_shown'])){
-		unset($_SESSION['err_shown']);
-		exit();
-	}
-
-	if(isset($_SESSION['err'])){
-		unset($_SESSION['err']);
+	//login function
+	if(isset($_POST['login_submit'])){
+		$username = mysqli_real_escape_string($conn, htmlspecialchars($_POST['username']));
+		$password = mysqli_real_escape_string($conn, htmlspecialchars($_POST['password']));
+		
+		if(empty($username) || empty($password)){
+			$_SESSION['err'] = '<li>'.$error_prefix.' '.$login_error.'</li>';
+		}
+		else{
+			$encrypted_pass = md5($password);
+			$checkUser = mysqli_query($conn, "SELECT username, password FROM user_tbl WHERE username = '$username' AND password = '$encrypted_pass'");
+			$countUser = mysqli_num_rows($checkUser);
+			if($countUser > 0){
+				$_SESSION['username'] = $username;
+				$_SESSION['success'] = '<li>'.$login_success.'<li>';
+			}
+			else{
+				$_SESSION['err'] = '<li>'.$login_incorrect.'</li>';
+			}
+		}
+		header('Location: login');
 	}
 
 	//logout function
-
 	if(isset($_POST['logout'])){
-		
+		unset($_SESSION['username']);
+		$_SESSION['success'] = $logout_success;
+		header('Location: home');
 	}
 
 	//redirect  users back
@@ -132,6 +145,27 @@
 		$nonloggedin_pages = array('timeline.php');
 		if(in_array(basename($_SERVER['PHP_SELF']), $nonloggedin_pages) && !isset($_SESSION['username'])){
 			header('Location: login');
+		}
+		//timeline already reviewed
+		if(basename($_SERVER['PHP_SELF']) == 'timeline.php' && isset($_GET['id'])){
+			$pilgrim_id = mysqli_real_escape_string($conn, htmlspecialchars($_GET['id']));
+			$user = $_SESSION['username'];
+			$checkReview = mysqli_query($conn, "SELECT review_id FROM review_tbl WHERE pilgrim_id = '$pilgrim_id' AND username = '$user'");
+			$countReview = mysqli_num_rows($checkReview);
+			if($countReview > 0){
+				header('Location: timeline');
+			}
+		}
+		//submit review
+		if(isset($_POST['submit_review'])){
+			$amenity_reason = mysqli_real_escape_string($conn, htmlspecialchars($_POST['amenity_reason']));
+			$comment = mysqli_real_escape_string($conn, htmlspecialchars($_POST['comment']));
+			$rating = mysqli_real_escape_string($conn, htmlspecialchars($_POST['rating']));		
+			$user = $_SESSION['username'];
+			$pilgrim_id = $_GET['id'];
+
+			mysqli_query($conn, "INSERT INTO review_tbl VALUES('', '$comment', '$pilgrim_id', '$rating', '$amenity_reason', '$user')");
+			header('Location: timeline');
 		}
 
 

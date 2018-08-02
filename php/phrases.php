@@ -16,7 +16,6 @@
 			$select_lang = "اختر اللغة";
 			$lp_heading = "تسهيل عملية الحج مهمتنا";
 			$lp_subheading = "سجل حساب مجاني ودعنا نساعدك في الحج وساعدنا في تطويره";
-			$lp_subheading_logged = "Explore the Hajj timeline and rate your experience";
 			$lp_subheading_logged = "تصفح جدول الحج وقيم تجربتك";
 			$register_btn = "سجل الآن";
 			$timeline_btn =  "جدول الحج";
@@ -43,9 +42,25 @@
 			$err_wrong_email = 'البريد الإلكتروني غير صحيح';
 			$time_heading = "مرحباً بك يا أيها الحاج";
 			$tl_name = "الحدث/النسك";
-			$tl_rating = "التقييم";
+			$tl_rating = "تقييمك";
 			$tl_date = "التاريخ";
-			$tl_review = "تقييم الحدث/النسك";			
+			$tl_review = "تقييم الحدث/النسك";
+			$reason_null = "ما رأيك؟";
+			$comment_placeholder = "تعليقك؟";
+			$review_btn = "إرسال التقييم";
+			$site_dir = "right";
+			$goback = "الرجوع";	
+			$admined_by = "تحت إدارة";
+			$logout_success = "تم تسجيل خروجك بنجاح";
+			$login_error = "اسم المستخدم/كلمة السر";
+			$login_success = "تم تسجيل دخولك بنجاح";
+			$login_incorrect = "اسم المستخدم/كلمة السر غير صحيحة";
+			$register_login = "لا يوجد لديك حساب؟";
+			$fh_heading = "مستقبل رفيق الحجاج";
+			$fh_text = "
+رفيق الحجاج سيوفر خدماته بجميع اللغات لكي تناسب المستخدم بأي لغة. كما سيتم تطوير الخدمة لتصبح معتمدة على موقع الحاج لكي تساعده للوصول للنسك القادم وتقييمه.
+كما سيتم تطويرها لتصبح متوفرة على جميع المنصات لكي يصبح أسهل للوصول له من أي مكان.";
+			$average_rating = "متوسط تقييم الرحلة";
 		break;
 		case 'en' :
 			$lang = "en";               
@@ -58,6 +73,7 @@
 			$select_lang = "Choose a language";
 			$lp_heading = "Making the Hajj experience easier is our job";
 			$lp_subheading = "Register a FREE account and let us help you so that you can help us improve the Hajj experience";
+			$lp_subheading_logged = "Explore the Hajj timeline and rate your experience";
 			$register_btn = "Register now";
 			$timeline_btn = "Hajj timeline";
 			$logout_btn = 'Sign out';
@@ -84,9 +100,26 @@ as each departments could develop and research based on Hujaj reviews.
 			$err_wrong_email = 'Wrong e-mail';
 			$time_heading = 'Welcome to Hajj';
 			$tl_name = "Event/Pilgrim";
-			$tl_rating = "Rating";
+			$tl_rating = "Your rating";
 			$tl_date = "Date";
-			$tl_review = "Review";
+			$tl_review = "Rate";
+			$reason_null = "What did you think?";
+			$comment_placeholder = "Any comments?";
+			$review_btn = "Submit review";
+			$site_dir = "left";
+			$goback = "Back";
+			$admined_by = "Administrationed by";
+			$logout_success = "You have been successfully logged out";
+			$login_error = "username/password";
+			$login_success = "You have successfully logged in";
+			$login_incorrect = "Incorrect username/password";
+			$register_login = "Don't have an account?";
+			$fh_heading = "Hajj companion in the future";
+			$fh_text = "Hajj companion will develop its service to accomodate all languages. The service will also
+be upgraded to become 'location based' and rate each pilgrim at its appropiate time.
+The service will also be developed on all platforms so that is even more easier to access from literally
+anywhere.";
+			$average_rating = "Trip average rating";
 		break;
 
 	}

@@ -39,6 +39,7 @@
 	color: white;
 	font-size: 20pt;
 	padding: 0;
+	margin-top: 20px;
 }
 .nav-list li{
 	margin-bottom: 20px;
@@ -50,4 +51,47 @@
 	text-align: center;
 	outline: 0px;
 	border-radius: 15px 15px 15px;
+}
+.logout_btn{
+	background-color: transparent;
+	color: white;
+	outline: 0px;
+	border: 0px;
+	cursor: pointer;
+}
+.error_messages{
+	background-color: red;
+	padding: 0;
+	width: 100%;
+	color: white;
+	list-style-type: none;
+	text-align: center;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	z-index: 9998;
+}
+.error_messages li{
+	margin-bottom: 5px;
+	width: 95%
+}
+.success_messages{
+	background-color: green;
+	padding: 0;
+	width: 100%;
+	color: white;
+	list-style-type: none;
+	text-align: center;
+	position: fixed;
+	top: 0px;
+	z-index: 9998;
+}
+.success_messages li{
+	margin-bottom: 5px;
+}
+.message_close{
+	display: block;
+	font-size: 14pt;
+	text-align: left;
+	z-index: 9999
 }

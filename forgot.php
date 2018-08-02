@@ -6,7 +6,8 @@
 </head>
 <body lang="<?php echo $lang ?>">	
 	<?php include_once('php/header.php'); ?>
-
+	<div class="page_container">
+	</div>
 	<?php include_once('php/footer.php'); ?>	
 </body>
 </html>

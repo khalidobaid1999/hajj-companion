@@ -1,3 +1,7 @@
+.ws-footer{
+	position: absolute;
+	bottom: 0px;
+}
 .register_div{
 	width: 100%;
 	text-align: center;
@@ -9,13 +13,7 @@
 	background-color: #efefef;
 	border: 1px solid lightgrey;
 }
-.error_messages{
-	background-color: red;
-	padding: 0;
-	width: 90%;
-	color: white;
-	list-style-type: none;
-}
+
 .register_form h3{
 	color: #d58f00;
 	font-weight: bold;

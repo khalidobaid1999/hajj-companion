@@ -1,9 +1,13 @@
+p{
+	white-space: pre-wrap;
+}
 .landing_div{
 	background: url(../images/makkah-landing.jpg);
 	background-position: bottom;
 	min-height: 400px;
 	position: relative;
 	text-align: center;
+	margin-top: 0px;
 }
 .landing_div_section{
 	position: relative;
@@ -22,6 +26,13 @@
 	min-height: 400px;
 	text-align: center;
 	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+.future_hajj{
+	background: url(../images/space.jpg);
+	position: relative;
+	min-height: 400px;
+	text-align: center;
 	background-repeat: no-repeat;
 }
 .hc_heading, .hc_text{

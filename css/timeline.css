@@ -7,10 +7,13 @@
 	color: #0a6700;
 }
 .timeline_table{
-	width: 90%;
+	width: 100%;
 	text-align: center;
 	border: 1px solid black;
 	border-collapse: collapse;
+}
+.timeline_table .done{
+	background-color: lightgreen;
 }
 .timeline_table th{
 	background-color: #efefef;
@@ -21,4 +24,33 @@
 	border: 1px solid black;
 	padding-top: 10px;
 	padding-bottom: 10px;
+}
+
+/* timeline review section */
+
+.timeline_review{
+	margin-top: 10px;
+	max-width: 500px;
+	width: 100%;
+	background-color: #efefef;
+	border: 1px solid lightgrey;
+}
+.pilgrim_name{
+	color: #d58f00;
+}
+.timeline_review select, input[type="text"], .timeline_review textarea, .timeline_review input[type="number"]{
+	width: 80%;
+	resize: none;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.timeline_review input[type="submit"]{
+	margin-bottom: 10px;
+}
+body[lang="ar"] textarea{
+	text-align: right !important;
+}
+body[lang="en"] textarea{
+	text-align: left !important
 }

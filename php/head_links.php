@@ -4,6 +4,7 @@
 <link rel="stylesheet" href="fontawesome/css/all.css" />
 <link rel="stylesheet" href="css/w3.css" />
 <link rel="stylesheet" href="css/header.css" />
+<link rel="stylesheet" href="css/footer.css" />
 <link rel="stylesheet" href="css/main.css" />
 <title>Hajj Companion | رفيق الحجاج</title>
 <script type="text/javascript" src="js/jquery.js"></script>

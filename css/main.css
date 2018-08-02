@@ -19,8 +19,15 @@ white - #fffff
 
 body{
 	width: 100%;
-	height: 100%;
-	margin: 0px !important;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+}
+*{
+	margin: 0;
+	padding: 0;
 }
 body[lang="ar"] *:not(i){
 	direction: rtl;
@@ -31,12 +38,32 @@ body[lang="en"] *:not(i){
 	direction: ltr;
 	font-family: arial;
 }
+body[lang="ar"] .ws-right{
+	float: right;
+}
+body[lang="ar"] .ws-left{
+	float: left;
+}
+body[lang="en"] .ws-right{
+	float: left;
+}
+body[lang="en"] .ws-left{
+	float: right;
+}
+
 input{
 	height: 40px;
 	border: 0.5px solid lightgrey;
 	border-radius: 2px 2px 2px;
 	text-align: center;
 }
+.page_container{
+	max-width: 1200px;
+	width: 100%;
+	margin: 0px auto;
+	flex: 1;
+}
+
 /* buttons classes */
 
 .green_btn, .blue_btn, .gold_btn{
@@ -51,4 +78,11 @@ input{
 }
 .green_btn{
 	background-color: #0a6700;
+}
+.gold_btn{
+	background-color: #d58f00;
+}
+.blue-url{
+	color: blue;
+	text-decoration: none;
 }

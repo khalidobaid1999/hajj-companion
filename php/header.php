@@ -1,3 +1,15 @@
+<?php if(isset($_SESSION['err'])){ ?>
+<ul class="error_messages">
+<a href="javascript:void(0)" class="message_close"><i class="fa fa-times"></i></a>
+<?php echo $_SESSION['err'] ?>
+</ul>
+<?php } unset($_SESSION['err']); ?>
+<?php if(isset($_SESSION['success'])){ ?>
+<ul class="success_messages">
+<a href="javascript:void(0)" class="message_close"><i class="fa fa-times"></i><br/>
+<?php echo $_SESSION['success'] ?>
+</ul>
+<?php } unset($_SESSION['success']); ?>
 <header class="ws-header">
 	<center>
 	<a href="javascript:void(0)" class="nav-btn"><i class="fas fa-bars"></i></a>
@@ -12,7 +24,7 @@
 				<li><a href="timeline"><?php echo $nav_timeline ?></a></li>
 				<li>
 					<form method="post">
-					<input type="submit" name="logout" value="<?php echo $logout_btn ?>" />
+					<input type="submit" name="logout" class="logout_btn" value="<?php echo $logout_btn ?>" />
 					</form>
 				</li>
 			<?php }else{ ?>
