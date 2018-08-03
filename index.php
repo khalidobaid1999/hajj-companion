@@ -43,6 +43,10 @@
     </section>
     <div class="color_overlay"></div>
   </section>
+
+  <section class="coming_soon">
+    <img src="images/web-design2-<?php echo $lang ?>.jpg"/>
+  </section>
 </div>
   <?php require('php/footer.php') ?>
 

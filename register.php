@@ -15,7 +15,7 @@
 			<input type="password" name="password" placeholder="<?php echo $form_password ?>" /><br/>
 			<input type="password" name="conf_password" placeholder="<?php echo $form_confpass ?>" /><br/>
 			<input type="submit" class="green_btn" name="register_submit" value="<?php echo $reg_submit ?>" /><br/>
-			<a href="/login"><?php echo $reg_already ?></a><br/>
+			<a href="login"><?php echo $reg_already ?></a><br/>
 		</form></center>
 	</div>
 	</div>
